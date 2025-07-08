@@ -1,0 +1,156 @@
+/* ======= Estilo Profissional e Tecnológico ======= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+:root {
+  --cor-fundo: #f4f4f4;
+  --cor-primaria: #0f1c2e;
+  --cor-secundaria: #2c3e50;
+  --cor-destaque: #007bff;
+  --cor-texto: #333;
+  --cor-branco: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--cor-primaria);
+  padding: 20px;
+  color: var(--cor-branco);
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--cor-branco);
+  font-weight: 500;
+  padding: 8px 16px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: var(--cor-destaque);
+  color: #fff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+main section {
+  background: var(--cor-branco);
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+main h2 {
+  font-size: 22px;
+  color: var(--cor-primaria);
+  margin-bottom: 15px;
+}
+
+.perfil-img {
+  max-width: 200px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: 500;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  resize: vertical;
+}
+
+form button {
+  padding: 12px;
+  background-color: var(--cor-destaque);
+  color: var(--cor-branco);
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: var(--cor-secundaria);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .perfil-img {
+    margin: 0 auto 20px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+}
